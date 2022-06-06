@@ -8,10 +8,15 @@ namespace ClassLibrary
 {
     public class BabelFish : Fish
     {
-        public BabelFish(string _name)
+        public BabelFish(string _name) : base(_name)
         {
-            Name = _name;
-            FoodRequiredInGrams = 0.3;
+        }
+
+        public static double Weight = 0.3;
+
+        public override double FoodRequiredInGrams()
+        {
+            return Weight;
         }
     }
 }

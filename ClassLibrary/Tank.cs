@@ -8,7 +8,7 @@ namespace ClassLibrary
 {
     public class Tank
     {
-        private List<Fish> _fish = new();
+        private readonly List<Fish> _fish = new();
 
         public void Add(Fish fish)
         {
@@ -19,7 +19,7 @@ namespace ClassLibrary
         {
             double sum = 0;
 
-            _fish.ForEach(f => sum += f.FoodRequiredInGrams);
+            _fish.ForEach(f => sum += f.FoodRequiredInGrams());
 
             return sum;
         }

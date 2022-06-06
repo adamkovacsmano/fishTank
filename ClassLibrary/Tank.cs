@@ -19,7 +19,7 @@ namespace ClassLibrary
         {
             double sum = 0;
 
-            _fish.ForEach(f => sum += f.Weight);
+            _fish.ForEach(f => sum += f.FoodRequiredInGrams);
 
             return sum;
         }

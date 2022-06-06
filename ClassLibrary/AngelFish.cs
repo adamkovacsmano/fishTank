@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class GoldFish : Fish
+    public class AngelFish : Fish
     {
-        public GoldFish(string _name)
+        public AngelFish(string _name)
         {
             Name = _name;
-            FoodRequiredInGrams = 0.1;
+            FoodRequiredInGrams = 0.2;
         }
     }
 }

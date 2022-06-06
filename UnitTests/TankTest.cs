@@ -8,8 +8,8 @@ namespace UnitTests
         [Fact]
         public void Tank_Feed_ReturnsExpectedSum()
         {
-            var fish1 = new Fish("Teo", 1.2);
-            var fish2 = new Fish("Grazia", 2.3);
+            var fish1 = new GoldFish("Teo");
+            var fish2 = new GoldFish("Grazia");
 
             var tank = new Tank();
             tank.Add(fish1);
@@ -17,7 +17,7 @@ namespace UnitTests
 
             var result = tank.Feed();
 
-            Assert.Equal(3.5, result);
+            Assert.Equal(2.4, result);
         }
     }
 }

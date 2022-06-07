@@ -25,7 +25,7 @@ namespace UnitTests
 
             var result = _tank.Feed();
 
-            Assert.Equal(0.1 + 0.2 + 0.3, result);
+            Assert.Equal(GoldFish.Weight + BabelFish.Weight + AngelFish.Weight, result);
         }
 
         [Theory]

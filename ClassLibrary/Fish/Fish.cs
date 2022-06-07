@@ -3,7 +3,8 @@
     public abstract class Fish : IFish
     {
         public string? Name { get; set; }
-        public abstract double FoodRequiredInGrams();
+
+        public abstract double GetFoodWeight();
 
         public Fish(string _name)
         {

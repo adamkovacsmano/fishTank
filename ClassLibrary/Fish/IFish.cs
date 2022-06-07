@@ -8,6 +8,6 @@ namespace ClassLibrary
 {
     public interface IFish
     {
-        double FoodRequiredInGrams();
+        double GetFoodWeight();
     }
 }

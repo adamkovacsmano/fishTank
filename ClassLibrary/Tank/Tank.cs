@@ -17,7 +17,7 @@ namespace ClassLibrary
 
         public double Feed()
         {
-            return _fish.Sum(f => f.FoodRequiredInGrams());
+            return _fish.Sum(f => f.GetFoodWeight());
         }
     }
 }

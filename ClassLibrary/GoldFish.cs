@@ -8,13 +8,13 @@ namespace ClassLibrary
 {
     public class GoldFish : Fish
     {
+        public static double Weight = 0.1;
+
         public GoldFish(string _name) : base(_name)
         {
         }
 
-        public static double Weight = 0.1;
-
-        public override double FoodRequiredInGrams()
+        public override double GetFoodWeight()
         {
             return Weight;
         }
